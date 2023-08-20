@@ -26,7 +26,7 @@ function UploadForm({ onUploadComplete }) {
 
     try {
       const jsonData = JSON.parse(fileContent);
-      const response = await axios.post('http://localhost:4000/api/v1/events', jsonData);
+      const response = await axios.post('https://animesh624-assignment-backendtools2.onrender.com/api/v1/events', jsonData);
       console.log(response.data); // Assuming the server sends back some response
       onUploadComplete();
     } catch (error) {

@@ -6,7 +6,7 @@ function Output() {
 
   const fetchOutput = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/v1/metrics');
+      const response = await axios.get('https://animesh624-assignment-backendtools2.onrender.com/api/v1/metrics');
       setOutput(response.data);
     } catch (error) {
       console.error(error);
