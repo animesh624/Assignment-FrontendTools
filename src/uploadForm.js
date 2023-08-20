@@ -37,7 +37,7 @@ function UploadForm({ onUploadComplete }) {
   return (
     <div>
       <input type="file" accept=".json" onChange={handleFileChange} />
-      <button onClick={handleSubmit}>Upload</button>
+      <button className="btn btn-primary mr-3" onClick={handleSubmit}>Upload</button>
     </div>
   );
 }
